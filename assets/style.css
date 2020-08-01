@@ -71,7 +71,7 @@ main{
 }
 
 .but:hover{
-    transition: 1s linear;
+    transition: 0.5s linear;
     background-color: #dfb305;
 }
 
@@ -102,7 +102,7 @@ main{
 }
 
 .hrefs a:hover{
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     color: #f7c70d;
 }
 
@@ -126,6 +126,12 @@ main{
     border-radius: 5px;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.block_of_information:hover{
+    transition: 0.5s linear;
+    height: 115px;
+    border: solid 1px #bbbbbb;
 }
 
 .block_of_blocks{
