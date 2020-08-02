@@ -1,4 +1,12 @@
-*{text-decoration: none;margin: 0;padding: 0;color: black;}
+*{text-decoration: none;margin: 0;padding: 0;color: black;
+padding-left: 0;padding-right:2px;
+font-family: "Montserrat", sans-serif;}
+
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body{background-color: #faf6f6;}
 
@@ -9,26 +17,28 @@ main{
 .main_content{
     width: 74.9%;
     margin: auto;
-    /*border: solid 1px black;*/
 }
 
 .block_content{
     width: 90%;
     margin: auto;
     margin-top: 3%;
-    /*border: solid 1px red;*/
-    height: 415px;
+    display: block;
 }
 
 .top_block_content{
     display: flex;
 }
 
+.top_block_content h1{
+    display: inline-block;
+}
+
 .block_left{
     transition: 2s linear;
     height: 415px;
     width: 50%;
-    /*border: solid 1px black;*/
+    padding-left: 20px;
 }
 
 .block_left p{
@@ -37,7 +47,6 @@ main{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 550;
-    /*border: solid 1px black;*/
     letter-spacing: 3px;
 }
 
@@ -47,7 +56,6 @@ main{
     font-weight: 700;
     width: 67%;
     font-size: 50px;
-    /*border: solid 1px black;*/
 }
 
 .lemon{
@@ -85,13 +93,11 @@ main{
     height: 415px;
     text-align: right;
     width: 50%;
-    /*border: solid 1px black;*/
 }
 
 .hrefs{
     top: 30px;
     line-height: 1.5;
-   /* border: solid 1px black;*/
     width: 40%;
     display: flex;
     font-family: "Montserrat", sans-serif;
@@ -121,7 +127,6 @@ main{
 .block_of_information{
     height: 95px;
     display: flex;
-    /*border: solid 1px green;*/
     width: 24%;
     background-color: white;
     border-radius: 5px;
@@ -133,7 +138,6 @@ main{
     margin-top: 4%;
     display: flex;
     justify-content:space-between;
-    /*border: solid 1px black;*/
 }
 
 .block_of_information img{
@@ -142,7 +146,6 @@ main{
 }
 
 .info{
-    /*border: solid 1px black;*/
     width: 64%;
 }
 
@@ -169,18 +172,275 @@ main{
     color: #8c8c8c;
 }
 
+.top_black_block{
+    margin-top: 10%;
+    transform: skewY(-1.5deg);
+    background: #131313;
+    background: radial-gradient(circle,#2f2f2f, #131313);
+    clear: both
+}
+
+.block_text{
+    padding-top: 5%;
+    margin-left: 5%;
+    width: 32%;
+    transform: skewY(1.5deg);
+}
+
+.block_text span{
+    color: #ffc001;
+}
+
+.block_text h2,p{
+    color: white;
+}
+
+.block_text p{
+    margin-top: 5%;
+    color: #c6c6c6;
+    font-size: 12px;
+}
+
+.way{
+    display:flex;
+    transform: skewY(1.5deg);
+    margin-top: 3%;
+    background-image: url(/img/Yell_way.png);
+    background-repeat: no-repeat;
+    height: 172px;
+    align-items: center;
+}
+
+.cadr{
+    margin-left: 7%;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.way p{
+    color: #000;
+    font-size: 16px;
+}
+
+.inner_way{
+    margin-left: 3%;
+}
+
+.phones{
+    position: relative;
+    top: -190px;
+    left: -20px;
+}
+
+.block_text_bot{
+    text-align: center;
+    transform: skewY(1.5deg);
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.block_text_bot h2{
+    letter-spacing: 1px;
+    width: 48%;
+    margin: auto;
+    color: white;
+    font-size: 1.5;
+}
+
+.block_text_bot span{
+    color: #ffc001;
+}
+
+.block_text_bot p{
+    text-align: center;
+    width: 34%;
+    margin: auto;
+    margin-top: 3%;
+    color: #c6c6c6;
+    font-size: 12px;
+}
+
+.but2{
+    transform: skewY(1.5deg);
+    margin: auto;
+    position: relative;
+    top: 25px;
+}
+
 @media only screen 
-and (max-width:1322px){
+and (max-width:1666px){
     .block_content{
         width: 100%;
     }
+}
 
-    .block_right img{
-        /*border: solid 1px pink;*/
-        float: left;
-    }
-
-    .hrefs{
-        width: 30%;
+@media only screen 
+and (max-width:1580px){
+    .inner_way h2{
+        font-size: 1.3em;
     }
 }
+
+@media only screen 
+and (max-width:1482px){
+    .block_left h1{
+        width: 75%;
+    }
+
+    .info span {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 8px;
+        color: black;
+    }
+
+    .inner_way h2{
+        font-size:0.9em;
+    }
+
+    .block_text_bot h2{
+        width: 55%;
+    }
+    
+    .block_text_bot p{
+        width: 40%;
+    }
+}
+
+@media only screen 
+and (max-width:1285px){
+    .lemon{
+        margin-right: 10%;
+    }
+
+    .main_content{
+        width: 100%;
+    }
+
+    .inner_way h2{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen 
+and (max-width:1111px){
+    .info span {
+        font-size: 8px;
+    }
+    .info h1 {
+        font-size: 1.3em;
+    }
+    .info h1:last-child{
+        font-size: 1.3em;
+    }
+    .phones{
+        display: none;
+    }
+    .inner_way h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width:793px){
+    .top_block_content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .top_block_content h1 img{
+        display: none;
+    }
+
+    .block_left{
+        width: 100%;
+    }
+
+    .centerImg{
+        display: flex;
+        margin: auto;
+    }
+
+    .block_left h1{
+       display: flex;
+       width: 80%;
+       text-align: center;
+       margin: auto;
+       margin-top: 5%;
+    }
+    
+    .block_left p{
+        text-align: center;
+        margin: auto;
+        margin-top: 4%;
+     }
+
+    .but{
+        margin: auto;
+        margin-top: 3%;
+        height: 45px;
+        width: 220px;
+    }
+
+    .block_right{
+        height: 415px;
+        text-align: right;
+        width: 100%;
+    }
+
+    .block_of_blocks{
+        margin-top: 4%;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+        
+    .block_of_information{
+        width: 100%;
+    }
+
+    .top_black_block{
+        transform: skewY(0deg);
+    }
+
+    .block_text{
+        transform: skewY(0deg);
+    }
+
+    .block_text{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .way{
+        transform: skewY(0deg);
+    }
+
+    .inner_way h2 {
+        font-size: 1em;
+    }
+
+    .inner_way p {
+        margin-top: 2%;
+    }
+
+    .block_text_bot{
+        transform: skewY(0deg);
+    }
+    
+    .block_text_bot h2{
+        width: 90%;
+    }
+    
+    .block_text_bot p{
+        width: 90%;
+    }
+
+    .but2{
+        transform: skewY(0deg);
+    }
+}
+
+
+
