@@ -205,7 +205,7 @@ main{
     display:flex;
     transform: skewY(1.5deg);
     margin-top: 3%;
-    background-image: url('Yell_way.png');
+    background-image: url('img_css/Yell_way.png');
     background-repeat: no-repeat;
     height: 172px;
     align-items: center;
